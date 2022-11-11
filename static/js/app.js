@@ -22,7 +22,7 @@ function buildTable(data) {
 // Create a variable to keep track of all the filters as an object.
 
  var filters = {};
- 
+
 // Use this function to update the filters. 
 function updateFilters() {
 
@@ -72,7 +72,7 @@ function updateFilters() {
     buildTable(filterData);
   }
   
-  // 2. Attach an event to listen for changes to each filter
+  // Attach an event to listen for changes to each filter
   d3.selectAll("input").on("change",updateFilters);
   
   // Build the table when the page loads
